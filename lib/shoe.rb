@@ -7,6 +7,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    if BRANDS.include?(brand)
+      BRANDS
     BRANDS << brand
     binding.pry
   end
@@ -14,10 +16,6 @@ class Shoe
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
-  end
-  
-  def brand=(brand)
-    binding.pry
   end
   
 end
