@@ -17,7 +17,7 @@ class Shoe
   end
   
   def brand=(brand)
-    require.pry
+    binding.pry
   end
   
 end
