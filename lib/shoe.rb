@@ -11,6 +11,7 @@ class Shoe
     binding.pry
     BRANDS << brand
   end
+  end
 
   def cobble
     self.condition = "new"
