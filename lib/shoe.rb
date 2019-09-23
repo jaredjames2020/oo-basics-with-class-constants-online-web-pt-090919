@@ -1,6 +1,6 @@
 class Shoe
   attr_accessor :color, :size, :material, :condition
-  attr_writer :brand
+  attr_reader :brand
 
   BRANDS = []
 
@@ -13,7 +13,7 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
   
-  def brand=(brand)
+  def brand
     @brand = brand
     BRANDS << brand
   end
