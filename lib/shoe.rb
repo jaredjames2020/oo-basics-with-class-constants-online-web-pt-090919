@@ -12,7 +12,7 @@ class Shoe
     else
       BRANDS << brand
     end
-    #binding.pry
+    binding.pry
   end
 
   def cobble
